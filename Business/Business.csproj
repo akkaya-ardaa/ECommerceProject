@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Services\Abstract\" />
+    <None Remove="Services\Concrete\" />
+    <None Remove="DependencyResolvers\" />
+    <None Remove="DependencyResolvers\Autofac\" />
+    <None Remove="Messaging\" />
+    <None Remove="Messaging\RabbitMQ\" />
+    <None Remove="Messaging\RabbitMQ\Abstract\" />
+    <None Remove="Messaging\RabbitMQ\Concrete\" />
+    <None Remove="Messaging\RabbitMQ\Concrete\RabbitMQ\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Services\Abstract\" />
+    <Folder Include="Services\Concrete\" />
+    <Folder Include="DependencyResolvers\" />
+    <Folder Include="DependencyResolvers\Autofac\" />
+    <Folder Include="Messaging\" />
+    <Folder Include="Messaging\RabbitMQ\" />
+    <Folder Include="Messaging\RabbitMQ\Abstract\" />
+    <Folder Include="Messaging\RabbitMQ\Concrete\" />
+    <Folder Include="Messaging\RabbitMQ\Concrete\RabbitMQ\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.0.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+  </ItemGroup>
+</Project>

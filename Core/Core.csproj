@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DataAccess\" />
+    <None Remove="DataAccess\Abstract\" />
+    <None Remove="Entities\" />
+    <None Remove="Entities\Abstract\" />
+    <None Remove="Entities\Concrete\" />
+    <None Remove="DataAccess\Concrete\" />
+    <None Remove="DataAccess\Concrete\Mongo\" />
+    <None Remove="DataAccess\Configuration\" />
+    <None Remove="Messaging\" />
+    <None Remove="Messaging\Abstract\" />
+    <None Remove="Messaging\Concrete\" />
+    <None Remove="Messaging\Concrete\RabbitMQ\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataAccess\" />
+    <Folder Include="DataAccess\Abstract\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Entities\Abstract\" />
+    <Folder Include="Entities\Concrete\" />
+    <Folder Include="DataAccess\Concrete\" />
+    <Folder Include="DataAccess\Concrete\Mongo\" />
+    <Folder Include="DataAccess\Configuration\" />
+    <Folder Include="Messaging\" />
+    <Folder Include="Messaging\Abstract\" />
+    <Folder Include="Messaging\Concrete\" />
+    <Folder Include="Messaging\Concrete\RabbitMQ\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.20.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.20.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
+  </ItemGroup>
+</Project>
