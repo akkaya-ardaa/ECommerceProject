@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Business.Messaging.RabbitMQ.Concrete.RabbitMQ;
+using Business.Messaging.Concrete.RabbitMQ;
 using Business.Services.Abstract;
 using Core.Messaging.Abstract;
 using Entities.Concrete;

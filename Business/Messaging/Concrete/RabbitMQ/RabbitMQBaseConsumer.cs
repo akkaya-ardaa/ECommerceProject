@@ -1,10 +1,10 @@
 ﻿using System;
-using Business.Messaging.RabbitMQ.Abstract;
+using Business.Messaging.Abstract;
 using Microsoft.Extensions.Hosting;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace Business.Messaging.RabbitMQ.Concrete.RabbitMQ
+namespace Business.Messaging.Concrete.RabbitMQ
 {
 	public abstract class RabbitMQBaseConsumer : BackgroundService , IConsumer
 	{
@@ -26,7 +26,7 @@ namespace Business.Messaging.RabbitMQ.Concrete.RabbitMQ
 
 			while (true)
 			{
-                channel.BasicConsume(queueName, false, consumer);
+                channel.BasicConsume(queueName, true, consumer);
                 Thread.Sleep(100);
 			}
 		}

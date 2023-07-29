@@ -2,7 +2,7 @@
 using Entities.Concrete;
 using RabbitMQ.Client.Events;
 
-namespace Business.Messaging.RabbitMQ.Concrete.RabbitMQ
+namespace Business.Messaging.Concrete.RabbitMQ
 {
     public class RabbitMQCategoryConsumer : RabbitMQBaseConsumer
     {

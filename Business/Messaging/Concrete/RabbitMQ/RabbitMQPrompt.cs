@@ -3,7 +3,7 @@ using Core.Entities.Abstract;
 using Core.Entities.Concrete;
 using Newtonsoft.Json;
 
-namespace Business.Messaging.RabbitMQ.Concrete.RabbitMQ
+namespace Business.Messaging.Concrete.RabbitMQ
 {
 	public class RabbitMQPrompt<TEntity>
 		where TEntity : BaseEntity, new()

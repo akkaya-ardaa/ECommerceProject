@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Business.DependencyResolvers.Autofac;
-using Business.Messaging.RabbitMQ.Concrete.RabbitMQ;
+using Business.Messaging.Concrete.RabbitMQ;
 using Core.Messaging.Abstract;
 using Core.Messaging.Concrete.RabbitMQ;
 using RabbitMQ.Client;

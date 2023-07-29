@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.Hosting;
 
-namespace Business.Messaging.RabbitMQ.Abstract
+namespace Business.Messaging.Abstract
 {
 	public interface IConsumer : IHostedService
 	{

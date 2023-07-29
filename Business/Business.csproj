@@ -13,10 +13,8 @@
     <None Remove="DependencyResolvers\" />
     <None Remove="DependencyResolvers\Autofac\" />
     <None Remove="Messaging\" />
-    <None Remove="Messaging\RabbitMQ\" />
-    <None Remove="Messaging\RabbitMQ\Abstract\" />
-    <None Remove="Messaging\RabbitMQ\Concrete\" />
-    <None Remove="Messaging\RabbitMQ\Concrete\RabbitMQ\" />
+    <None Remove="Messaging\Abstract\" />
+    <None Remove="Messaging\Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -25,10 +23,8 @@
     <Folder Include="DependencyResolvers\" />
     <Folder Include="DependencyResolvers\Autofac\" />
     <Folder Include="Messaging\" />
-    <Folder Include="Messaging\RabbitMQ\" />
-    <Folder Include="Messaging\RabbitMQ\Abstract\" />
-    <Folder Include="Messaging\RabbitMQ\Concrete\" />
-    <Folder Include="Messaging\RabbitMQ\Concrete\RabbitMQ\" />
+    <Folder Include="Messaging\Abstract\" />
+    <Folder Include="Messaging\Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Autofac" Version="7.0.1" />
